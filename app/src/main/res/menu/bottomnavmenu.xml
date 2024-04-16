@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:iconTint="@color/mycll"
+        android:icon="@drawable/ic_home"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+    <item
+        android:id="@+id/chat"
+        android:title="Chat"
+        android:icon="@drawable/chat"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/setting"
+        tools:ignore="HardcodedText" />
+</menu>

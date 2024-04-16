@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "871890479142",
+    "project_id": "translator-87bed",
+    "storage_bucket": "translator-87bed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871890479142:android:a72efe522054cf16bc9ee7",
+        "android_client_info": {
+          "package_name": "com.example.champstechnology.translator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtpqqPMuTnL5TRMs7K-J7bkGMm8nHhGQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871890479142:android:78e98beb2889e3f4bc9ee7",
+        "android_client_info": {
+          "package_name": "com.example.shah.translator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtpqqPMuTnL5TRMs7K-J7bkGMm8nHhGQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
