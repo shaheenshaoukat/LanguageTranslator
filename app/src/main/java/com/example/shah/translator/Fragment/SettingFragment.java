@@ -1,4 +1,4 @@
-package com.example.shah.translator;
+package com.example.shah.translator.Fragment;
 
 import android.os.Bundle;
 
@@ -8,19 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.shah.translator.R;
+
 
 public class SettingFragment extends Fragment {
 
 
 
     public SettingFragment() {
-        // Required empty public constructor
     }
-
-
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

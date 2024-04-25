@@ -1,21 +1,20 @@
-package com.example.shah.translator;
+package com.example.shah.translator.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-import android.widget.Toolbar;
 
+import com.example.shah.translator.Fragment.ChatFragment;
+import com.example.shah.translator.Fragment.HomeFragment;
+import com.example.shah.translator.Fragment.SettingFragment;
+import com.example.shah.translator.R;
 import com.example.shah.translator.databinding.ActivityDashboardBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
 
 public class Dashboard extends AppCompatActivity {
     ActivityDashboardBinding binding;
@@ -54,7 +53,7 @@ public class Dashboard extends AppCompatActivity {
     }
 
     public void Favourite(View view) {
-        Intent intent=new Intent(Dashboard.this,Favourite.class);
+        Intent intent=new Intent(Dashboard.this, Favourite.class);
         startActivity(intent);
     }
 }

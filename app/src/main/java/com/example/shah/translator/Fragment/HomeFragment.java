@@ -1,4 +1,4 @@
-package com.example.shah.translator;
+package com.example.shah.translator.Fragment;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -19,6 +19,7 @@ import android.speech.tts.TextToSpeech;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.TypefaceSpan;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import com.example.shah.translator.R;
 import com.example.shah.translator.databinding.FragmentHomeBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -92,6 +94,15 @@ public class HomeFragment extends Fragment {
                 binding.tospinner.setSelection(toSelectedPosition);
             }
         });
+        binding.textSpeech.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String s = binding.translatetv.getText().toString();
+                int speech = textToSpeech.speak(s, TextToSpeech.QUEUE_FLUSH, null);
+
+            }
+        });
+        //text to seppech code end
         binding.fspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -248,10 +259,11 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        binding.mic.setOnClickListener(new View.OnClickListener() {
+        binding.voice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                Log.d("MIc","onclick");
                 Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
@@ -262,7 +274,7 @@ public class HomeFragment extends Fragment {
 
                 } catch (Exception e) {
                     e.printStackTrace();
-                    Toast.makeText(getContext(), "" + e.getMessage(), Toast.LENGTH_LONG);
+                    Log.d("Error",e.getMessage());
                 }
 
             }
@@ -279,25 +291,21 @@ public class HomeFragment extends Fragment {
             case "Albanian":
                 languagecode = FirebaseTranslateLanguage.SQ;
                 break;
-
             case "Arabic":
                 languagecode = FirebaseTranslateLanguage.AR;
                 break;
             case "Belarusian":
                 languagecode = FirebaseTranslateLanguage.BE;
                 break;
-
             case "Bangali":
                 languagecode = FirebaseTranslateLanguage.BN;
                 break;
-
             case "Chinese":
                 languagecode = FirebaseTranslateLanguage.ZH;
                 break;
             case "Croatian":
                 languagecode = FirebaseTranslateLanguage.HR;
                 break;
-
             case "Danish":
                 languagecode = FirebaseTranslateLanguage.DA;
                 break;
@@ -312,7 +320,6 @@ public class HomeFragment extends Fragment {
                 break;
             case "Filipino":
                 languagecode = FirebaseTranslateLanguage.TL;
-
                 break;
             case "Finnish":
                 languagecode = FirebaseTranslateLanguage.FI;

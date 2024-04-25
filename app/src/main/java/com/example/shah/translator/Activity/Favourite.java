@@ -1,8 +1,10 @@
-package com.example.shah.translator;
+package com.example.shah.translator.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.shah.translator.R;
 
 public class Favourite extends AppCompatActivity {
 

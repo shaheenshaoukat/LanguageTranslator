@@ -1,4 +1,4 @@
-package com.example.shah.translator;
+package com.example.shah.translator.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import com.example.shah.translator.R;
 import com.example.shah.translator.databinding.ActivityMainBinding;
 
 import java.util.Timer;

@@ -13,16 +13,14 @@
         android:theme="@style/Theme.Translator"
         tools:targetApi="31">
         <activity
-            android:name=".Favourite"
+            android:name=".Activity.Favourite"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Dashboard"
             android:exported="false" />
         <activity
-            android:name=".homefrgmnt"
-            android:exported="false" />
-        <activity
-            android:name=".Dashboard"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
